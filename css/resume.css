@@ -1,0 +1,126 @@
+@import url(../tw/twbuild.css);@import url('https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,500;1,500&family=Poppins:wght@300;400;500;600;700&family=Satisfy&family=Ubuntu:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,500;1,500&family=Poppins:wght@300;400;500;600;700&family=Satisfy&family=Ubuntu:ital,wght@0,400;0,500;1,400&display=swap');
+
+/* nav */
+.red-circle {
+    display: inline-block;
+    background-color: red;
+    height: 1.5rem;
+    width: 1rem;
+    border-radius: 100%;
+
+    margin-top: 0.6rem;
+    margin-right: 0.1rem;
+    margin-left: 2rem;
+}
+
+.font-anton{
+    font-family: 'anton',sans-serif;
+}
+.font-ubuntu{
+    font-family: 'ubuntu',sans-serif;
+}
+
+nav li{
+    padding: 0.6rem;
+
+}
+nav li a:hover{
+    text-decoration:underline;
+    color: skyblue;
+    transition: all 0.2s ease-in;
+}
+
+nav .active{
+    color: blue;
+}
+
+/* main section */
+main section.grid{
+    grid-template-columns: 40% 60%;
+    width: 50rem;
+}
+
+.line-under::after{
+    content: '  ';
+    height: 0.2rem;
+    width: calc(100%);
+    position: absolute;
+    left: 2.5rem;
+    top: 1.1rem;
+    background-color: skyblue;
+}
+
+ul.edu{
+    list-style: none;
+}
+
+.font-ubuntu{
+    font-family: 'Ubuntu', sans-serif;
+}
+.font-playfair{
+    font-family: 'Playfair Display', se
+}
+.edu >*{
+    padding: 0.25rem 0;
+}
+#contact ~ *{
+    padding: 0.25 0;
+}
+#skills ~ *{
+    padding: 0.25 0;
+    font-size: 1.15rem;
+}
+.pro-bar1{
+    background-color: gray;
+    border-radius: 1rem;;
+    width: 10rem;
+    height: 0.8rem;
+    display: inline-block;
+    margin-left: 5.3rem;
+}
+.pro-bar1-in{
+    position: absolute;
+    display: inline-block;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    width: 8.5rem;
+    height: 0.8rem;
+    background-color: blue;
+
+}
+.pro-bar2{
+    background-color: gray;
+    border-radius: 1rem;;
+    width: 10rem;
+    height: 0.8rem;
+    display: inline-block;
+    margin-left: 6rem;
+
+}
+.pro-bar2-in{
+    position: absolute;
+    display: inline-block;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    width: 7.5rem;
+    height: 0.8rem;
+    background-color: blue;
+}
+.pro-bar3{
+    background-color: gray;
+    border-radius: 1rem;;
+    width: 10rem;
+    height: 0.8rem;
+    display: inline-block;
+    margin-left: 5rem;
+}
+.pro-bar3-in{
+    position: absolute;
+    display: inline-block;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    width: 9.5rem;
+    height: 0.8rem;
+    background-color: blue;
+}
