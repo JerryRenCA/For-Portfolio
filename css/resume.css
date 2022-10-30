@@ -124,3 +124,19 @@ ul.edu{
     height: 0.8rem;
     background-color: blue;
 }
+
+/* Footer */
+footer .triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid red;
+}
+
+#contact-to {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 10px 15px 0 0 red;
+  }

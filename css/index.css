@@ -14,6 +14,9 @@ body {
     width: 90%;
     margin-top: 5rem;
 }
+.font-anton {
+    font-family: 'anton', sans-serif;
+}
 
 /* nav */
 .red-circle {
@@ -28,9 +31,7 @@ body {
     margin-left: 2rem;
 }
 
-.font-anton {
-    font-family: 'anton', sans-serif;
-}
+
 
 
 nav li {
@@ -51,7 +52,7 @@ nav .active {
 /* banner section */
 #banner>div {
     /* width: 72rem; */
-    height: 30rem;
+    min-height: 30rem;
 }
 
 #banner #leftbanner {
@@ -81,6 +82,26 @@ nav .active {
     transition: all 0.2s ease-in;
 }
 
+/* goals */
+section#goals >div>div {
+    width: 60%;
+    min-height: 15rem;
+    min-width: 30rem;
+
+
+    box-shadow:  0 4px 2px -2px rebeccapurple;
+    /* background-color: aqua; */
+}
+/* skills section */
+section#skills >div>div {
+    width: 70%;
+    min-height: 15rem;
+    min-width: 30rem;
+
+
+    box-shadow: 0 4px 2px -2px rebeccapurple;
+    /* background-color: aqua; */
+}
 /* Footer */
 footer .triangle-down {
     width: 0;
@@ -95,4 +116,4 @@ footer .triangle-down {
     height: 60px;
     border-radius: 50%;
     box-shadow: 10px 15px 0 0 red;
-  }
+}
