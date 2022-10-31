@@ -14,6 +14,7 @@ body {
     width: 90%;
     margin-top: 5rem;
 }
+
 .font-anton {
     font-family: 'anton', sans-serif;
 }
@@ -50,6 +51,52 @@ nav .active {
 }
 
 /* banner section */
+#hello>div {
+    overflow: hidden;
+}
+#hello span{
+    display: inline-block;
+    width: 30rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+#hello .spandiv {
+    animation: 40s  linear infinite 0s show-hello;
+}
+
+@keyframes show-hello {
+    0% {
+        transform: translateY(0%);
+    }
+    30% {
+        transform: translateY(0%);
+    }
+
+    35% {
+        transform: translateY(-100%);
+    }
+    65% {
+        transform: translateY(-100%);
+    }
+
+    70%{
+        transform: translateY(-200%);
+    }
+    100%{
+        transform: translateY(-200%);
+    }
+
+
+}
+.blink{
+    animation: blink-animation 1.5s steps(2, start) infinite;
+}
+
+@keyframes blink-animation {
+    to{
+        visibility: hidden;
+    }
+}
 #banner>div {
     /* width: 72rem; */
     min-height: 30rem;
@@ -81,19 +128,27 @@ nav .active {
     color: blue;
     transition: all 0.2s ease-in;
 }
-
+.slide-in{
+    animation: 3s linear 1s slidein;
+}
+@keyframes slidein {
+    0%{
+        transform: translateX(-100%);
+    }
+}
 /* goals */
-section#goals >div>div {
+section#goals>div>div {
     width: 60%;
     min-height: 15rem;
     min-width: 30rem;
 
 
-    box-shadow:  0 4px 2px -2px rebeccapurple;
+    box-shadow: 0 4px 2px -2px rebeccapurple;
     /* background-color: aqua; */
 }
+
 /* skills section */
-section#skills >div>div {
+section#skills>div>div {
     width: 70%;
     min-height: 15rem;
     min-width: 30rem;
@@ -102,6 +157,7 @@ section#skills >div>div {
     box-shadow: 0 4px 2px -2px rebeccapurple;
     /* background-color: aqua; */
 }
+
 /* Footer */
 footer .triangle-down {
     width: 0;
