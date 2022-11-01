@@ -20,20 +20,6 @@ body {
 }
 
 /* nav */
-.red-circle {
-    display: inline-block;
-    background-color: red;
-    height: 1.5rem;
-    width: 1rem;
-    border-radius: 100%;
-
-    margin-top: 0.6rem;
-    margin-right: 0.1rem;
-    margin-left: 2rem;
-}
-
-
-
 
 nav li {
     padding: 0.6rem;
@@ -128,15 +114,31 @@ nav .active {
     color: blue;
     transition: all 0.2s ease-in;
 }
-.slide-in{
-    animation: 3s linear 1s slidein;
+/* animation for goals & skills */
+
+.slide-in-animation{
+    animation: 1.5s linear slidein;
+    
 }
 @keyframes slidein {
     0%{
         transform: translateX(-100%);
+        opacity: 60%;
+    }
+}
+.slide-in-reverse-animation{
+    animation: 1.5s linear slidein-reverse;
+}
+@keyframes slidein-reverse {
+    0%{
+        transform: translateX(100%);
+        opacity: 60%;
     }
 }
 /* goals */
+.titleshadow{
+    text-shadow: 1px 2px rebeccapurple;
+}
 section#goals>div>div {
     width: 60%;
     min-height: 15rem;
