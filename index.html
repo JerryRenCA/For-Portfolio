@@ -14,24 +14,33 @@
 </head>
 
 <body>
-    <header class="m-8 pl-4 ">
-        <nav id="nav" class="sticky flex justify-between px-4">
-            <div class="font-anton tracking-wider text-3xl pl-8"> <i class="fa-solid fa-cubes text-red-600 hover:text-green-600 cursor-pointer"></i> Jerry
-                Ren</div>
-            <div class="flex">
-                <ul class="hidden md:flex pr-8 text-xl font-bold">
-                    <li class="active"><a href="#">Home</a> </li>
-                    <li> <a href="./pages/contact.html">Contact</a></li>
-                    <li><a href="./pages/goals.html">Goals</a></li>
-                    <li><a href="./pages/skills.html">Skills</a></li>
-                    <li><a href="./pages/resume.html">Resume</a></li>
+    <header>
+        <div id="narbar" class="fixed w-full">
+            <nav id="nav" class="grid md:flex grid-cols-1 justify-between mx-8 ">
+                <div class="font-anton tracking-wider text-3xl pl-8"> <i
+                        class="fa-solid fa-cubes text-red-600 hover:text-green-600 cursor-pointer"></i>
+                    <span class="underline md:no-underline decoration-red-700"> Jerry Ren</span>
+                </div>
+                <div id="menu" class="flex mx-auto md:mx-0 p-0 ">
+                    <!-- <ul class="hidden md:flex pr-8 text-xl font-bold"> -->
+                    <ul class="flex text-xl font-bold ">
+                        <li class="active"><a href="./index.html">Home</a> </li>
+                        <li> <a href="./pages/contact.html">Contact</a></li>
+                        <li><a href="./pages/goals.html">Goals</a></li>
+                        <li><a href="./pages/skills.html">Skills</a></li>
+                        <li><a href="./pages/resume.html">Resume</a></li>
 
-                </ul>
-                <div class="block md:hidden"><i class=" fa-solid fa-bars pt-4 text-3xl hover:cursor-pointer"
-                        onclick="dropnavmenu()"></i></div>
-            </div>
-        </nav>
-        <section id="banner" class=" mt-36">
+                    </ul>
+
+                    <!-- <div class="block md:hidden"> -->
+                    <!-- <div class="block">
+                        <i class=" fa-solid fa-bars text-3xl hover:cursor-pointer" onclick="toggle_navmenu()"></i>
+                    </div> -->
+                </div>
+
+            </nav>
+        </div>
+        <section id="banner" class=" ml-8">
             <div class="flex justify-center items-center  flex-col lg:flex-row ">
                 <div id="leftbanner" class=" w-5/12 ">
 
@@ -40,11 +49,11 @@
 
                     <div id="hello" class="text-red-500 text-8xl font-extrabold ">
                         <div class=" h-24 relative">
-                            <div class="flex flex-col absolute  w-fit ">
+                            <div class="flex flex-col absolute  w-fit">
                                 <span class="spandiv">Hello!</span>
                                 <span class="spandiv">Bonjour!</span>
-                                <!-- <span class="spandiv">Hola!</span> 
-                                <span class="spandiv">你好!</span> -->
+                                <!-- <span >Hola!</span> 
+                                <span >你好!</span> -->
                                 <span class="spandiv">Hello!</span>
                             </div>
 
@@ -71,11 +80,12 @@
 
         </section>
     </header>
+
     <main>
         <div class="throughline mx-auto"></div>
         <!-- goals section -->
-        <section id="goals">
-            
+        <section id="goals" class="pt-4">
+
             <div class="text-center p-8  font-bold font-anton align-middle">
                 <i class="fa-solid fa-clock-rotate-left rotate-180 text-5xl text-blue-600"></i>
                 <span class="pl-6 text-6xl text-red-600 titleshadow">goals</span>
@@ -241,22 +251,47 @@
     </main>
     <!-- Footer -->
     <div class="throughline mx-auto"></div>
-    <footer class="ml-24 mt-12 mb-12">
+    <footer class="ml-24 mt-12 mb-12 relative">
         <div class="flex items-center pb-5">
             <div><i class="fa-solid fa-cubes text-red-600 text-4xl hover:text-green-600 cursor-pointer"></i> </div>
             <div class="pl-2  text-5xl font-bold text-blue-800">Contact</div>
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 px-5 text-lg">
-            <div class="ml-2"><i class="fa-solid fa-mobile-screen-button text-3xl p-2"></i>(+1)639 560-3039</div>
-            <div class="ml-2"><i class="fa-regular fa-envelope text-3xl p-2"></i>online2jerry@gmail.com</div>
-            <div class="ml-2"><i class="fa-solid fa-globe text-3xl p-2"></i><a href="https://www.online2jerry.ml"
-                    class="hover:text-red-800"> www.online2jerry.ml</a></div>
-            <div class="ml-2"><i class="fa-solid fa-house-chimney-user text-3xl p-2"></i>New Minas, Nova Scotia, CA
+        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 px-5 text-lg contact-items">
+
+            <div class="ml-2 flex">
+                <i
+                    class="fa-solid fa-mobile-screen-button text-3xl p-2 hover:text-blue-600 cursor-pointer inline-block"></i>
+                <div class=" relative grow self-center">
+                    <span class="contact-item inline-block min-w-48"> (+1)639 560-****</span>
+                    <span class=" contact-item-background absolute inline-block w-full"> (+1)639 560-****</span>
+                </div>
+            </div>
+            <div class="ml-2 flex"><i class="fa-regular fa-envelope text-3xl p-2 hover:text-blue-600 cursor-pointer"></i>
+
+                <div class=" relative grow self-center">
+                    <span class="contact-item inline-block min-w-48"> online2jerry@gmail.com</span>
+                    <span class=" contact-item-background absolute inline-block w-full"> online2jerry@gmail.com</span>
+                </div>
+            </div>
+            <div class="ml-2 flex"><i class="fa-solid fa-globe text-3xl p-2 hover:text-blue-600 cursor-pointer"></i>
+                <a href="https://www.online2jerry.ml" class="hover:text-blue-800 grow self-center"> 
+
+                    <div class=" relative ">
+                        <span class="contact-item inline-block min-w-48"> www.online2jerry.ml</span>
+                        <span class=" contact-item-background absolute inline-block w-full"> www.online2jerry.ml</span>
+                    </div>
+                </a></div>
+            <div class="ml-2 flex"><i
+                    class="fa-solid fa-house-chimney-user text-3xl p-2 hover:text-blue-600 cursor-pointer"></i>
+
+                <div class=" relative grow self-center">
+                    <span class="contact-item inline-block min-w-48"> New Minas, Nova Scotia, CA</span>
+                    <span class=" contact-item-background absolute inline-block w-full"> New Minas, Nova Scotia, CA</span>
+                </div>
             </div>
         </div>
 
     </footer>
-
 
     <script src="js/script.js"></script>
 </body>

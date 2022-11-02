@@ -2,17 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,500;1,500&family=Poppins:wght@300;400;500;600;700&family=Satisfy&family=Ubuntu:ital,wght@0,400;0,500;1,400&display=swap');
 
 /* nav */
-.red-circle {
-    display: inline-block;
-    background-color: red;
-    height: 1.5rem;
-    width: 1rem;
-    border-radius: 100%;
 
-    margin-top: 0.6rem;
-    margin-right: 0.1rem;
-    margin-left: 2rem;
-}
 
 .font-anton{
     font-family: 'anton',sans-serif;
@@ -21,17 +11,32 @@
     font-family: 'ubuntu',sans-serif;
 }
 
-nav li{
+/* nav */
+header{
+    margin-bottom: 6rem;
+}
+#navbar {
+    top: 0rem;
+    padding-top: 2rem;
+    padding-right: 4rem;
+    padding-bottom: 2rem;
+    display: block;
+    z-index: 9999;
+    background-color: white;
+}
+
+nav li {
     padding: 0.6rem;
 
 }
-nav li a:hover{
-    text-decoration:underline;
+
+nav li a:hover {
+    text-decoration: underline;
     color: skyblue;
     transition: all 0.2s ease-in;
 }
 
-nav .active{
+nav .active {
     color: blue;
 }
 
