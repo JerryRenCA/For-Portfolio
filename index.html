@@ -16,32 +16,29 @@
 <body>
     <header>
         <div id="narbar" class="fixed w-full">
-            <nav id="nav" class="grid md:flex grid-cols-1 justify-between mx-8 ">
+            <div class="w-full h-2 ">
+                <div id="myBar" class=" bg-green-900 h-2 w-0"></div>
+            </div>
+            <nav id="nav" class="grid md:flex grid-cols-1 justify-between mx-8 pt-8">
                 <div class="font-anton tracking-wider text-3xl pl-8"> <i
                         class="fa-solid fa-cubes text-red-600 hover:text-green-600 cursor-pointer"></i>
                     <span class="underline md:no-underline decoration-red-700"> Jerry Ren</span>
                 </div>
                 <div id="menu" class="flex mx-auto md:mx-0 p-0 ">
                     <!-- <ul class="hidden md:flex pr-8 text-xl font-bold"> -->
-                    <ul class="flex text-xl font-bold ">
-                        <li class="active"><a href="./index.html">Home</a> </li>
-                        <li> <a href="./pages/contact.html">Contact</a></li>
-                        <li><a href="./pages/goals.html">Goals</a></li>
-                        <li><a href="./pages/skills.html">Skills</a></li>
+                    <ul class="flex text-xl font-bold pr-16">
+                        <li><button id="home-btn">Home</button> </li>
+                        <li><button id="about-btn">Skills</button></li>
+                        <li><button id="work-btn">Projects</button></li>
+                        <li><button id="contact-btn">Contact</button></li>
                         <li><a href="./pages/resume.html">Resume</a></li>
-
                     </ul>
-
-                    <!-- <div class="block md:hidden"> -->
-                    <!-- <div class="block">
-                        <i class=" fa-solid fa-bars text-3xl hover:cursor-pointer" onclick="toggle_navmenu()"></i>
-                    </div> -->
                 </div>
 
             </nav>
         </div>
-        <section id="banner" class=" ml-8">
-            <div class="flex justify-center items-center  flex-col lg:flex-row ">
+        <section id="banner" class=" flex flex-col justify-center items-center ">
+            <div class="main-div flex justify-center items-center flex-col lg:flex-row grow">
                 <div id="leftbanner" class=" w-5/12 ">
 
                 </div>
@@ -64,233 +61,329 @@
                     <div class="text-4xl font-bold">
                         <ul class="p-2">
                             <li>I'm Jerry Ren, a full-stack developer</li>
-                            <li>based on Halifax, NS<i
+                            <li>based on Halifax, NS<i id="shake-icon"
                                     class="fa-solid fa-map-location-dot text-blue-300 p-2 cursor-pointer"></i>.</li>
 
                         </ul>
                         <div class="p-2 "><span class="text-blue-800">
                                 <span class="bg-black pl-2 text-white"><span>C:/></span> <span
                                         class="pr-4 blink text-gray-100">|</span> </span>
-                                <a href="" class=" hover:text-blue-600 pl-4"> Full skills </a></span> ready for
+                                <button id="full-skill-tag" class=" hover:text-blue-600 pl-4"> Full skills
+                                </button></span> ready for
                             projects.</div>
                     </div>
 
                 </div>
             </div>
-
+            <div class="mouse"></div>
         </section>
     </header>
 
     <main>
-        <div class="throughline mx-auto"></div>
-        <!-- goals section -->
-        <section id="goals" class="pt-4">
-
+        <div id="about-line" class="throughline mx-auto pt-24"></div>
+        <!-- about section -->
+        <section id="about-section" class="pt-4">
             <div class="text-center p-8  font-bold font-anton align-middle">
                 <i class="fa-solid fa-clock-rotate-left rotate-180 text-5xl text-blue-600"></i>
-                <span class="pl-6 text-6xl text-red-600 titleshadow">goals</span>
+                <span class="pl-6 text-6xl text-red-600 titleshadow">skills</span>
             </div>
             <div class=" flex flex-col justify-center items-center mt-5 ">
-                <div class="flex text-3xl items-center justify-between slide-in whenscrolling">
-                    <div><i class="fa-solid fa-timeline text-blue-700 rotate-90"></i> Sep - Oct, 2022</div>
-                    <div class="text-red-800">
-                        <div class="p-5"><i class="fa-brands fa-html5"></i><span class="p-2 uppercase">html</span></div>
-                        <div class="p-5"><i class="fa-brands fa-css3-alt"></i><span class="p-2 uppercase">CSS</span>
-                        </div>
-                        <div class="p-5"><i class="fa-brands fa-node"></i><span class="p-2 ">Node.js</span></div>
-                    </div>
-                    <div>
-                        <div class="p-5"><i class="fa-solid fa-bullseye pr-2 text-blue-800"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><span class="p-5">90%</span></div>
-                        <div class="p-5"><i class="fa-solid fa-bullseye pr-2 text-blue-800"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><span class="p-5">90%</span></div>
-                        <div class="p-5"><i class="fa-solid fa-bullseye pr-2 text-blue-800"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star-half-stroke"></i><span class="p-5">70%</span></div>
-                    </div>
-                </div>
-                <div class="flex text-3xl items-center justify-between slide-in-reverse whenscrolling">
-                    <div><i class="fa-solid fa-timeline text-blue-700 rotate-90"></i> Nov - Dec, 2022</div>
-                    <div class="text-red-800">
-                        <div class="p-5"><i class="fa-brands fa-react"></i><span class="p-2 ">React</span></div>
-                        <div class="p-5"><i class="fa-solid fa-sitemap"></i><span class="p-2 ">SQL</span></div>
-                        <div class="p-5"><i class="fa-brands fa-node"></i><span class="p-2 ">Node.js</span></div>
-                    </div>
-                    <div>
-                        <div class="p-5"><i class="fa-solid fa-bullseye pr-2 text-blue-800"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i
-                                class="fa-regular fa-star"></i><span class="p-5">50%</span></div>
-                        <div class="p-5"><i class="fa-solid fa-bullseye pr-2 text-blue-800"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-regular fa-star"></i><span class="p-5">70%</span></div>
-                        <div class="p-5"><i class="fa-solid fa-bullseye pr-2 text-blue-800"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><span class="p-5">95%</span></div>
-                    </div>
-                </div>
-                <div class="flex text-3xl items-center justify-between slide-in whenscrolling">
-                    <div><i class="fa-solid fa-timeline text-blue-700 rotate-90"></i> Jan - Mar, 2023</div>
-                    <div class="text-red-800">
-                        <div class="p-5"><i class="fa-brands fa-react"></i><span class="p-2 ">React</span></div>
-                        <div class="p-5"><i class="fa-brands fa-css3-alt"></i><span class="p-2 uppercase">sql</span>
-                        </div>
-                        <div class="p-5"><i class="fa-brands fa-node"></i><span class="p-2 ">Node.js</span></div>
-                    </div>
-                    <div>
-                        <div class="p-5"><i class="fa-solid fa-bullseye pr-2 text-blue-800"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><span class="p-5">90%</span></div>
-                        <div class="p-5"><i class="fa-solid fa-bullseye pr-2 text-blue-800"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><span class="p-5">90%</span></div>
-                        <div class="p-5"><i class="fa-solid fa-bullseye pr-2 text-blue-800"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><span class="p-5">100%</span></div>
-                    </div>
-                </div>
-                <div class="flex text-3xl items-center justify-between slide-in-reverse whenscrolling">
-                    <div><i class="fa-solid fa-timeline text-blue-700 rotate-90"></i> Apr - May, 2023</div>
-                    <div class="text-red-800">
-                        <div class="p-5"><i class="fa-brands fa-rev"></i><span class="p-2 ">Review skills</span></div>
+                <div class="flex flex-col justify-center items-center">
 
-                    </div>
-                    <div>
-                        <div class="p-5"><i class="fa-solid fa-bullseye pr-2 text-blue-800"></i><i
-                                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
-                                class="fa-regular fa-star"></i><span class="p-5">0%</span></div>
-
+                    <div class="text-3xl grid grid-cols-2 max-w-[85rem] gap-20">
+                        <div class="text-2xl ">
+                            <div class="text-4xl font-bold py-8">Get to know me</div>
+                            <div class="py-2">I'm a <b>full stack developer</b> having wide skills from frontend,
+                                backend to algorithm. Can play a <b>reliable</b> role in a team, especially for an agile
+                                team.</div>
+                            <div class="py-2">Have <b>solid background</b> in data structure, algorithm, mathematics,
+                                statistics. Can grow and gain skills very quickly. Expert in problem solver.</div>
+                            <div class="py-2">Have <b>good logical thinking</b>. Can deliver solutions for <b>complex
+                                    settings</b>.</div>
+                            <div class="py-2">Always be kind, smiling and full of energy.</div>
+                        </div>
+                        <div id="skills-list" class="text-2xl ">
+                            <div class="text-4xl font-bold pt-8">Skill Stack</div>
+                            <div class="w-full ">
+                                <div>
+                                    <div>
+                                        <i class="fa-solid fa-angles-left text-blue-700 "></i>
+                                        <div class="text-3xl font-bold pt-8 inline-block">Front End</div>
+                                    </div>
+                                    <div class=" flex flex-wrap text-xl">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>React</span>
+                                        <span>Typescript</span>
+                                        <span>Tailwind CSS</span>
+                                        <span>Styled Component</span>
+                                        <span>Material UI</span>
+                                        <span>Leaflet GIS</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <i class="fa-solid fa-angles-left rotate-180 text-blue-700 "></i>
+                                        <div class="text-3xl font-bold pt-4 inline-block">Back End</div>
+                                    </div>
+                                    <div class="flex flex-wrap text-xl">
+                                        <span>Node.js</span>
+                                        <span>Typescript</span>
+                                        <span>Express</span>
+                                        <span>Nest.js</span>
+                                        <span>MongoDB</span>
+                                        <span>TypeORM</span>
+                                        <span>Sequelize</span>
+                                        <span>PostgreSQL</span>
+                                        <span>Socket.io</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <i class="fa-solid fa-shuffle text-blue-700 "></i>
+                                        <div class="text-3xl font-bold pt-4 inline-block">Others</div>
+                                    </div>
+                                    <div class="flex flex-wrap text-xl">
+                                        <span>Git</span>
+                                        <span>C#</span>
+                                        <span>Mathematics</span>
+                                        <span>Numerical computation</span>
+                                        <span>Statistics</span>
+                                        <span>Algorithm</span>
+                                        <span>RESTful</span>
+                                        <span>OWASP</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
         </section>
-        <!-- Skills section -->
-        <div class="throughline mx-auto my-5"></div>
-        <section id="skills">
+        <!-- Work section -->
+        <div id="work-line" class="throughline mx-auto pt-24"></div>
+        <section id="work-section">
             <div class="text-center p-8  font-bold font-anton align-middle">
                 <i class="fa-solid fa-arrow-down-wide-short rotate-180 text-5xl text-blue-600"></i>
-                <span class="pl-6 text-6xl text-red-600 titleshadow">skills</span>
+                <span class="pl-6 text-6xl text-red-600 titleshadow">projects</span>
             </div>
             <div class=" flex flex-col justify-center items-center mt-5">
-                <div class="flex text-3xl items-center justify-between slide-in whenscrolling">
-                    <div><i class="fa-solid fa-angles-left text-blue-700 "></i> Front - end</div>
-                    <div class="text-red-800">
-                        <div class="p-5"><i class="fa-brands fa-html5"></i><span class="p-2 uppercase">html</span></div>
-                        <div class="p-5"><i class="fa-brands fa-css3-alt"></i><span class="p-2 uppercase">CSS</span>
-                        </div>
-                        <div class="p-5"><i class="fa-brands fa-js"></i><span class="p-2 ">Javascript</span></div>
+                <div class="flex flex-col xl:flex-row text-3xl items-center justify-between slide-in whenscrolling py-16">
+                    <div class="w-[40rem] relative mx-8 shrink-0">
+                        <img src="./asset/images/laptop-mac.png" alt="laoptop" class="">
+                        <img src="./asset/images/screen-shot-portfolio.png" alt=""
+                            class="absolute left-[5.4rem] top-[2rem] w-[29.2rem]">
                     </div>
-                    <div>
-                        <div class="p-5"><i class="fa-solid fa-ranking-star pr-2 text-blue-800"></i>
-                            <span class="p-5">Advanced</span>
+                    <div class="max-w-[40rem]">
+                        <div class="text-3xl font-bold pt-4 font-poppins">Portfolio</div>
+                        <p></p>
+                        <div>
+                            <div class="font-poppins py-4 text-2xl">Technologies</div>
+                            <div class="flex flex-wrap tech-list text-lg">
+                                <span>Vanilla Html</span>
+                                <span>Vanilla CSS</span>
+                                <span>Vanilla Javascript</span>
+                                <span>Tailwind CSS</span>
+                                <span>Font-awesome</span>
+                                <span>Responsive</span>
+                            </div>
                         </div>
-                        <div class="p-5"><i class="fa-solid fa-ranking-star pr-2 text-blue-800"></i>
-                            <span class="p-5">Advanced</span>
-                        </div>
-                        <div class="p-5"><i class="fa-solid fa-ranking-star pr-2 text-blue-800"></i>
-                            <span class="p-5">Advanced</span>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="flex text-3xl items-center justify-between slide-in-reverse whenscrolling">
-                    <div><i class="fa-solid fa-angles-left rotate-180 text-blue-700 "></i> Back - end</div>
-                    <div class="text-red-800 ">
-                        <div class="p-5"><i class="fa-solid fa-database"></i><span class="p-2">Database</span></div>
-                        <div class="p-5"><i class="fa-brands fa-php"></i><span class="p-2 uppercase">php</span></div>
-                        <div class="p-5"><i class="fa-solid fa-c"></i><span class="p-2 ">C#, .net</span></div>
-                        <div class="p-5"><i class="fa-brands fa-node"></i><span class="p-2 ">Node.js</span></div>
-                    </div>
-                    <div>
-                        <div class="p-5"><i class="fa-solid fa-ranking-star pr-2 text-blue-800"></i>
-                            <span class="p-5">Intermediate</span>
-                        </div>
-                        <div class="p-5"><i class="fa-solid fa-ranking-star pr-2 text-blue-800"></i>
-                            <span class="p-5">Novice</span>
-                        </div>
-                        <div class="p-5"><i class="fa-solid fa-ranking-star pr-2 text-blue-800"></i>
-                            <span class="p-5">Advanced</span>
-                        </div>
-                        <div class="p-5"><i class="fa-solid fa-ranking-star pr-2 text-blue-800"></i>
-                            <span class="p-5">Intermediate</span>
+                        <div>
+                            <div class="font-poppins py-4 text-2xl">Link to</div>
+                            <div class="text-lg flex gap-8 repo-link">
+                                <span><a href="#">Repository    <i class="fa-solid fa-arrow-up-right-from-square"></i></a></span>
+                                <span><a href="#">Web Site    <i class="fa-solid fa-arrow-up-right-from-square"></i></a></span>
+                            </div>
                         </div>
                     </div>
-
-                </div>
-                <div class="flex text-3xl items-center justify-between slide-in whenscrolling">
-                    <div><i class="fa-solid fa-user-plus text-blue-700 "></i> Coding Plus</div>
-                    <div class="text-red-800 ">
-                        <div class="p-5"><i class="fa-solid fa-arrow-down-a-z"></i><span class="p-2">Algorithm</span>
-                        </div>
-                        <div class="p-5"><i class="fa-solid fa-bars-staggered -rotate-90"></i><span
-                                class="p-2 ">Statistics</span></div>
-                        <div class="p-5"><i class="fa-solid fa-building-circle-check"></i></i><span class="p-2 ">Math
-                                Modeling</span></div>
-
-                    </div>
-                    <div>
-                        <div class="p-5"><i class="fa-solid fa-ranking-star pr-2 text-blue-800"></i>
-                            <span class="p-5">Advanced</span>
-                        </div>
-                        <div class="p-5"><i class="fa-solid fa-ranking-star pr-2 text-blue-800"></i>
-                            <span class="p-5">Advanced</span>
-                        </div>
-                        <div class="p-5"><i class="fa-solid fa-ranking-star pr-2 text-blue-800"></i>
-                            <span class="p-5">Advanced</span>
-                        </div>
-
-                    </div>
-
                 </div>
 
+                <div class="flex flex-col xl:flex-row text-3xl items-center justify-between slide-in-reverse whenscrolling py-24">
+                    <div class="w-[40rem] relative mx-8 shrink-0">
+                        <img src="./asset/images/laptop-mac.png" alt="laoptop" class="">
+                        <img src="./asset/images/Screenshot for Weather-Tile.png" alt=""
+                            class="absolute left-[5.4rem] top-[2rem] w-[29.2rem]">
+                    </div>
+                    <div class="max-w-[40rem]">
+                        <div class="text-3xl font-bold py-2 font-poppins">Weather Tile</div>
+                        <div class=" text-lg ">Weather Tile is a single-page application.
+                            It has nice UI, and provides current, 24 hours and 7 days' weather information.
+                        </div>
+                        <div>
+                            <div class="font-poppins pt-4 text-2xl">Technologies</div>
+                            <div class="flex flex-wrap tech-list text-lg">
+                                <span>React</span>
+                                <span>Typescript</span>
+                                <span>Tailwind CSS</span>
+                                <span>Styled Component</span>
+                                <span>Material UI</span>
+                                <span>RESTful</span>
+                                <span>Vite</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="font-poppins pt-4 text-2xl">Link to</div>
+                            <div class="flex gap-8 repo-link text-lg">
+                                <span><a href="#">Repository    <i class="fa-solid fa-arrow-up-right-from-square"></i></a></span>
+                                <span><a href="https://weather-tile.netlify.app/">Web Site    <i class="fa-solid fa-arrow-up-right-from-square"></i></a></span>
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
+
+                <div class="flex flex-col xl:flex-row text-3xl items-center justify-between slide-in whenscrolling">
+                    <div class="w-[40rem] relative mx-8 shrink-0">
+                        <img src="./asset/images/laptop-mac.png" alt="laoptop" class="">
+                        <img src="./asset/images/Screenshot for Tictactoe.png" alt=""
+                            class="absolute left-[5.4rem] top-[2rem] w-[29.2rem]">
+                    </div>
+                    <div class="max-w-[40rem]">
+                        <div class="text-3xl font-bold py-2 font-poppins">General Tic-tac-toe</div>
+                        <div class=" text-lg ">General Tic-tac-toe is a web based game application. It supplies variable board size from 3x3 to 30x30, and players also could 
+                            decide the number in a line to win. </div>
+                        <div>
+                            <div class="font-poppins pt-4 text-2xl">Technologies</div>
+                            <div class="flex flex-wrap tech-list text-lg">
+                                <span>React</span>
+                                <span>Algorithm</span>
+                                <span>Tailwind CSS</span>
+                                <span>Styled Component</span>
+                                <span>Material UI</span>
+                                <span>Typescript</span>
+                                <span>Jest</span>
+                                <span>Vite</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="font-poppins pt-4 text-2xl">Link to</div>
+                            <div class="text-lg flex gap-8 repo-link">
+                                <span><a href="#">Repository    <i class="fa-solid fa-arrow-up-right-from-square"></i></a></span>
+                                <span><a href="https://jerry-tictactoe.netlify.app">Web Site    <i class="fa-solid fa-arrow-up-right-from-square"></i></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col xl:flex-row text-3xl items-center justify-between slide-in-reverse whenscrolling py-24">
+                    <div class="w-[40rem] relative mx-8 shrink-0">
+                        <img src="./asset/images/laptop-mac.png" alt="laoptop" class="">
+                        <img src="./asset/images/Screenshot for Bus Tracker.png" alt=""
+                            class="absolute left-[5.4rem] top-[2rem] w-[29.2rem]">
+                    </div>
+                    <div class="max-w-[40rem]">
+                        <div class="text-3xl font-bold py-4 font-poppins">Halifax Bus Tracker</div>
+                        <div class=" text-xl ">
+                            Halifax Bus Tracker is GIS based bus tracking application. It proivdes a graphic interface for users to query real time data for buses in Halifax.
+                        </div>
+                        <div>
+                            <div class="font-poppins py-4 text-2xl">Technologies</div>
+                            <div class="flex flex-wrap tech-list text-lg">
+                                <span>Vanilla HTML</span>
+                                <span>Leaflet GIS</span>
+                                <span>Tailwind CSS</span>
+                                <span>Express.js</span>
+                                <span>Node.js</span>
+                                <span>SQLite</span>
+                                <span>Sequelize</span>
+                                <span>RESTful</span>
+                                <span>DOM</span>
+                            </div>
+                            <div>
+                                <div class="font-poppins pt-4 text-2xl">Link to</div>
+                                <div class="flex gap-8 repo-link text-lg">
+                                    <span><a href="#">Repository    <i class="fa-solid fa-arrow-up-right-from-square"></i></a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col xl:flex-row text-3xl items-center justify-between slide-in whenscrolling">
+                    <div class="w-[40rem] relative mx-8 shrink-0">
+                        <img src="./asset/images/laptop-mac.png" alt="laoptop" class="">
+                        <img src="./asset/images/Screenshot for Sqlite Manage.png" alt=""
+                            class="absolute left-[5.4rem] top-[2rem] w-[29.2rem]">
+                    </div>
+                    <div class="max-w-[40rem]">
+                        <div class="text-3xl font-bold py-4 font-poppins">Sqlite DB Admin Page</div>
+                        <div class=" text-xl ">Sqlite DB Admin Page is a simple web framework to manage Sqlite backend database. </div>
+                        <div>
+                            <div class="font-poppins py-4 text-2xl">Technologies</div>
+                            <div class="flex flex-wrap tech-list text-lg">
+                                <span>Vanilla HTML</span>
+                                <span>DOM </span>
+                                <span>Tailwind CSS</span>
+                                <span>Font-awesome</span>
+                                <span>SQL</span>
+                                <span>RESTful</span>
+                                <span>Express.js</span>
+                                <span>Node.js</span>
+                            </div>
+                            <div>
+                                <div class="font-poppins pt-4 text-2xl">Link to</div>
+                                <div class="flex gap-8 repo-link text-lg">
+                                    <span><a href="#">Repository    <i class="fa-solid fa-arrow-up-right-from-square"></i></a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <!-- Footer -->
     <div class="throughline mx-auto"></div>
-    <footer class="ml-24 mt-12 mb-12 relative">
-        <div class="flex items-center pb-5">
-            <div><i class="fa-solid fa-cubes text-red-600 text-4xl hover:text-green-600 cursor-pointer"></i> </div>
-            <div class="pl-2  text-5xl font-bold text-blue-800">Contact</div>
-        </div>
-        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 px-5 text-lg contact-items">
-
-            <div class="ml-2 flex">
-                <i
-                    class="fa-solid fa-mobile-screen-button text-3xl p-2 hover:text-blue-600 cursor-pointer inline-block"></i>
-                <div class=" relative grow self-center">
-                    <span class="contact-item inline-block min-w-48"> (+1)639 560-****</span>
-                    <span class=" contact-item-background absolute inline-block w-full"> (+1)639 560-****</span>
-                </div>
+    <footer id="contact-section" class="min-h-[15rem]  bg-gray-500 flex flex-col justify-center">
+        <div class="ml-16 ">
+            <div class="flex items-center pb-5">
+                <div><i class="fa-solid fa-cubes text-red-600 text-4xl hover:text-green-600 cursor-pointer"></i> </div>
+                <div class="pl-2  text-5xl font-bold text-white">Contact</div>
             </div>
-            <div class="ml-2 flex"><i class="fa-regular fa-envelope text-3xl p-2 hover:text-blue-600 cursor-pointer"></i>
+            <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 px-5 text-lg contact-items">
 
-                <div class=" relative grow self-center">
-                    <span class="contact-item inline-block min-w-48"> online2jerry@gmail.com</span>
-                    <span class=" contact-item-background absolute inline-block w-full"> online2jerry@gmail.com</span>
-                </div>
-            </div>
-            <div class="ml-2 flex"><i class="fa-solid fa-globe text-3xl p-2 hover:text-blue-600 cursor-pointer"></i>
-                <a href="https://www.online2jerry.ml" class="hover:text-blue-800 grow self-center"> 
-
-                    <div class=" relative ">
-                        <span class="contact-item inline-block min-w-48"> www.online2jerry.ml</span>
-                        <span class=" contact-item-background absolute inline-block w-full"> www.online2jerry.ml</span>
+                <div class="ml-2 flex">
+                    <i
+                        class="text-white fa-solid fa-mobile-screen-button text-3xl p-2 hover:text-blue-700 cursor-pointer inline-block"></i>
+                    <div class=" relative grow self-center">
+                        <span class="text-xl contact-item inline-block min-w-48"> (+1)639 560-****</span>
+                        <span class="text-xl contact-item-background absolute inline-block w-full"> (+1)639
+                            560-****</span>
                     </div>
-                </a></div>
-            <div class="ml-2 flex"><i
-                    class="fa-solid fa-house-chimney-user text-3xl p-2 hover:text-blue-600 cursor-pointer"></i>
+                </div>
+                <div class="ml-2 flex"><i
+                        class="text-white fa-regular fa-envelope text-3xl p-2 hover:text-blue-700 cursor-pointer"></i>
 
-                <div class=" relative grow self-center">
-                    <span class="contact-item inline-block min-w-48"> New Minas, Nova Scotia, CA</span>
-                    <span class=" contact-item-background absolute inline-block w-full"> New Minas, Nova Scotia, CA</span>
+                    <div class=" relative grow self-center">
+                        <span class="text-xl contact-item inline-block min-w-48"> online2jerry@gmail.com</span>
+                        <span class="text-xl contact-item-background absolute inline-block w-full">
+                            online2jerry@gmail.com</span>
+                    </div>
+                </div>
+                <div class="ml-2 flex"><i
+                        class="text-white  fa-solid fa-globe text-3xl p-2 hover:text-blue-700 cursor-pointer"></i>
+                    <a href="https://www.online2jerry.ml" class="hover:text-blue-800 grow self-center">
+
+                        <div class=" relative ">
+                            <span class="text-xl contact-item inline-block min-w-48"> www.online2jerry.ml</span>
+                            <span class="text-xl contact-item-background absolute inline-block w-full">
+                                www.online2jerry.ml</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="ml-2 flex"><i
+                        class="text-white  fa-solid fa-house-chimney-user text-3xl p-2 hover:text-blue-700 cursor-pointer"></i>
+
+                    <div class=" relative grow self-center">
+                        <span class=" text-xl contact-item inline-block min-w-48"> New Minas, Nova Scotia, CA</span>
+                        <span class=" text-xl contact-item-background absolute inline-block w-full"> New Minas, Nova
+                            Scotia,
+                            CA</span>
+                    </div>
                 </div>
             </div>
         </div>
-
     </footer>
 
     <script src="js/script.js"></script>

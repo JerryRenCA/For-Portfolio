@@ -1,7 +1,10 @@
 @import url(../tw/twbuild.css);
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,500;1,500&family=Poppins:wght@300;400;500;600;700&family=Satisfy&family=Ubuntu:ital,wght@0,400;0,500;1,400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Roboto:ital@0;1&family=Satisfy&family=Ubuntu+Condensed&display=swap');
 /* global */
+html {
+    scroll-behavior: smooth;
+  }
 ::-webkit-scrollbar {
     width: 0.75em;
     height: 0%;
@@ -24,15 +27,12 @@
 
 body {
     max-width: 100vw;
-    /* overflow: hidden; */
-
-
 }
 
 .throughline {
     border-top: solid 1px lightgrey;
     border-style: solid;
-    box-shadow: 1px 1px 2px;
+    /* box-shadow: 1px 1px 2px; */
     width: 90%;
     margin-top: 5rem;
 }
@@ -45,8 +45,6 @@ body {
 
 #narbar {
     top: 0rem;
-    padding-top: 2rem;
-    padding-right: 4rem;
     padding-bottom: 2rem;
     display: block;
     z-index: 9999;
@@ -58,9 +56,9 @@ nav li {
 
 }
 
-nav li a:hover {
+nav li button:hover,a:hover {
     text-decoration: underline;
-    color: skyblue;
+    color: rgb(195, 12, 21);
     transition: all 0.2s ease-in;
 }
 
@@ -69,6 +67,9 @@ nav .active {
 }
 
 /* banner section */
+#banner{
+    min-height: calc(100vh - 5rem);
+}
 #hello>div {
     overflow: hidden;
 }
@@ -122,7 +123,7 @@ nav .active {
     }
 }
 
-#banner>div {
+#banner>main-div {
     /* width: 72rem; */
     min-height: 48rem;
 }
@@ -157,25 +158,25 @@ nav .active {
 /* animation for goals & skills */
 
 .slide-in-animation {
-    animation: 1.5s linear slidein;
+    animation: 0.4s ease-in-out slidein;
 
 }
 
 @keyframes slidein {
     0% {
         transform: translateX(-100%);
-        opacity: 60%;
+        opacity: 100%;
     }
 }
 
 .slide-in-reverse-animation {
-    animation: 1.5s linear slidein-reverse;
+    animation: 0.4s ease-in-out slidein-reverse;
 }
 
 @keyframes slidein-reverse {
     0% {
         transform: translateX(100%);
-        opacity: 60%;
+        opacity: 100%;
     }
 }
 
@@ -197,10 +198,7 @@ section#skills>div>div {
     width: 70%;
     min-height: 15rem;
     min-width: 30rem;
-
-
     box-shadow: 0 4px 2px -2px rebeccapurple;
-
 }
 
 /* Footer */
@@ -215,5 +213,95 @@ footer .triangle-down {
 footer .contact-item-background {
     opacity: 0.6;
     left: 0%;
-    z-index: -999;
+    z-index: 999;
 }
+
+.mouse{
+
+    width: 25px;
+    height: 40px;
+    border: 2px solid #333;
+    border-radius: 60px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.mouse::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 7px;
+    left: 40%;
+    transform: translateX(-90%);
+    background-color: #333;
+    border-radius: 50%;
+    opacity: 1;
+    animation: wheel 1.3s infinite;
+    -webkit-animation: wheel 1.3s infinite;
+    color: blue;
+}
+@keyframes wheel {
+    0%{
+        transform: translateY(-50%);
+    }
+    100%{
+        transform: translateY(350%);
+    }
+}
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(0, 1px, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-1px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(1px, 0, 0);
+    }
+  }
+
+  #shake-icon:hover {
+    animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+
+  #skills-list span{
+    color: brown;
+    background-color: #eee;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin: 0.5rem;
+  }
+  #skills-list span:hover{
+    background-color: #ccc;
+  }
+  .tech-list > span{
+    color: brown;
+    background-color: #eee;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin: 0.5rem;
+  }
+  .tech-list >span:hover{
+    background-color: #ccc;
+  }
+  .repo-link > span{
+    color: brown;
+    background-color: #eee;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin: 0.5rem;
+  }
+  .repo-link >span:hover{
+    background-color: #ccc;
+  }
