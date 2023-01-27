@@ -136,6 +136,7 @@ const observer_about = new IntersectionObserver((entries) => {
 observer_about.observe(document.getElementById("about-section"));
 
 const observer_work = new IntersectionObserver((entries) => {
+  console.log('work-sec')
   entries.forEach((ele) => {
     if (ele.isIntersecting) {
       work_btn.classList.add("active");
@@ -144,7 +145,7 @@ const observer_work = new IntersectionObserver((entries) => {
     }
   });
 });
-observer_work.observe(document.getElementById("work-section"));
+observer_work.observe(document.getElementById("work-section")); 
 
 window.onscroll = function () {
   myFunction();
