@@ -42,7 +42,7 @@ const contact_infos = [
   "(+1)639 560-****",
   "online2jerry@gmail.com",
   "www.online2jerry.ml",
-  "New Minas, Nova Scotia, CA",
+  "Halifax, Nova Scotia, CA",
 ];
 for (let i = 0; i < i_tags.length; i++) {
   show_letters(i_tags[i], i);
