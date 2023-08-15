@@ -41,7 +41,7 @@ const i_tags = document.querySelectorAll("footer .contact-items .contact-item");
 const contact_infos = [
   "(+1)639 560-****",
   "online2jerry@gmail.com",
-  "www.online2jerry.ml",
+  "https://jerryportfolio.netlify.app/",
   "Halifax, Nova Scotia, CA",
 ];
 for (let i = 0; i < i_tags.length; i++) {
